@@ -4,6 +4,8 @@ github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/drone/drone-go v1.1.0 h1:2mritc5b7PhQWvILNyzaImZMRWVbMmmZ5Q0UDwwO7SI=
 github.com/drone/drone-go v1.1.0/go.mod h1:GxyeGClYohaKNYJv/ZpsmVHtMJ7WhoT+uDaJNcDIrk4=
+github.com/drone/drone-go v1.2.0 h1:Gnp79mJHf4Q5Kwkw2nIRQcj7ZAA/kqKNEz5dJ3n/0Uk=
+github.com/drone/drone-go v1.2.0/go.mod h1:GxyeGClYohaKNYJv/ZpsmVHtMJ7WhoT+uDaJNcDIrk4=
 github.com/gin-contrib/sse v0.1.0 h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
 github.com/gin-gonic/gin v1.5.0 h1:fi+bqFAx/oLK54somfCtEZs9HeH1LHVoEPUgARpTqyc=

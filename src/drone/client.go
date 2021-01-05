@@ -24,14 +24,14 @@ func NewClient(droneHost, droneToken string) *Client {
 	return &Client{droneClient}
 }
 
-// GetLastBuildID returns the last build for the given owner/repo:branch
-func (c *Client) GetLastBuildID(repoOwner string, repoName string, repoBranch string) (int64, error) {
+// GetLastBuildNumber returns the last build for the given owner/repo:branch
+func (c *Client) GetLastBuildNumber(repoOwner string, repoName string, repoBranch string) (int64, error) {
 	build, err := c.droneClient.BuildLast(repoOwner, repoName, repoBranch)
 	if err != nil {
 		return 0, err
 	}
 
-	return build.ID, err
+	return build.Number, err
 }
 
 // TriggerBuild fetches the last build for the given owner/repo:branch, and triggers a restart
@@ -41,10 +41,10 @@ func (c *Client) TriggerBuild(repoOwner string, repoName string, repoBranch stri
 		return 0, err
 	}
 
-	nBuild, err := c.droneClient.BuildRestart(repoOwner, repoName, int(build.ID), nil)
+	nBuild, err := c.droneClient.BuildRestart(repoOwner, repoName, int(build.Number), nil)
 	if err != nil {
 		return 0, err
 	}
 
-	return nBuild.ID, err
+	return nBuild.Number, err
 }

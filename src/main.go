@@ -81,11 +81,11 @@ func initConfig() *config {
 		repoBranch,
 	)
 
-	buildID, err := drone.GetLastBuildID(repoOwner, repoName, repoBranch)
+	buildNumber, err := drone.GetLastBuildNumber(repoOwner, repoName, repoBranch)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("Found last build with ID %d", buildID)
+	log.Printf("Found last build with ID %d", buildNumber)
 
 	return &config{
 		*drone,
